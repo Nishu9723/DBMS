@@ -52,4 +52,15 @@ select LTRIM('    sapataaaaa')
 select 'THIS IS A LAB'
 select lower('THIS IS A LAB')
 
+select 'THIS IS A LAB'
+select upper('this is lab')
+
+select 'THIS is A LAB'
+select reverse('THIS as A LAB')
+
+select 'THIS IS A LAB'
+select substring('THIS IS A LAB',5,7)
+
 select * from employ order by e_salary;
+select TOP 2 * from employ;
+select TOP 3 * from employ order by e_age DESC;
