@@ -46,7 +46,7 @@ select COUNT(*) from employ where e_gender='Male';
 select SUM(e_salary) from employ;
 select AVG(e_age) from employ;
 
-select '     sapataaaaa'
+/*select '     sapataaaaa'
 select LTRIM('    sapataaaaa')
 
 select 'THIS IS A LAB'
@@ -62,5 +62,8 @@ select 'THIS IS A LAB'
 select substring('THIS IS A LAB',5,7)
 
 select * from employ order by e_salary;
-select TOP 2 * from employ;
-select TOP 3 * from employ order by e_age DESC;
+select top 2 * from employ;
+select TOP 3 * from employ order by e_age DESC;*/
+
+select avg(e_salary),e_gender from employ group by e_gender;   /* it checks the average of the male and female*/
+select avg(e_age),e_dept from employ group by e_dept order by(e_age)desc;
